@@ -60,8 +60,7 @@ public class UI {
         else {
             if (piece.getColor() == Color.WHITE) {
                 System.out.print(ANSI_WHITE + piece + ANSI_RESET);
-            }
-            else {
+            } else {
                 System.out.print(ANSI_YELLOW + piece + ANSI_RESET);
             }
         }
