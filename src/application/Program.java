@@ -11,10 +11,10 @@ import chess.ChessPosition;
 public class Program {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 		ChessMatch chessMatch = new ChessMatch();
-		
+
 		while (true) {
 			try {
 
@@ -23,18 +23,16 @@ public class Program {
 				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
-				
+
 				System.out.println();
 				System.out.print("Target: ");
 				ChessPosition target = UI.readChessPosition(sc);
-				
+
 				ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
-			}
-			catch (ChessException e) {
+			} catch (ChessException e) {
 				System.out.println(UI.ANSI_CYAN + e.getMessage() + UI.ANSI_RESET);
 				sc.nextLine();
-			}
-			catch (InputMismatchException e) {
+			} catch (InputMismatchException e) {
 				System.out.println(UI.ANSI_RED + e.getMessage() + UI.ANSI_RESET);
 				sc.nextLine();
 			}
