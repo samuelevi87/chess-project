@@ -47,6 +47,7 @@ public class Program {
 				System.out.println(UI.ANSI_RED + e.getMessage() + UI.ANSI_RESET);
 				sc.nextLine();
 			}
+			
 		}
 	}
 
