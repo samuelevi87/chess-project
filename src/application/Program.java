@@ -10,7 +10,6 @@ import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
 
-
 public class Program {
 
 	public static void main(String[] args) {
@@ -48,7 +47,7 @@ public class Program {
 				System.out.println(UI.ANSI_RED + e.getMessage() + UI.ANSI_RESET);
 				sc.nextLine();
 			}
-			
+
 		}
 		UI.clearScreen();
 		UI.printMatch(chessMatch, captured);
